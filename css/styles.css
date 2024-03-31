@@ -156,7 +156,7 @@ img {
 }
 .hero {
   background-image: linear-gradient(var(--grey), var(--grey)),
-    url(../images/office.jpg);
+    url(../images/office-desktop.jpg);
   max-width: 1440px;
   background-position: center;
   background-repeat: no-repeat;
