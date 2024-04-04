@@ -51,7 +51,6 @@ img {
 
 .container {
   width: 320px;
-  margin: 0 auto;
   padding-left: 16px;
   padding-right: 16px;
   margin-left: auto;
@@ -75,7 +74,6 @@ section {
   border-bottom: 1px solid var(--cornflower);
   box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08),
     0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 2px 1px 0 rgba(46, 47, 66, 0.08);
-  background: var(--white);
 }
 .navigation {
   display: flex;
@@ -222,8 +220,11 @@ section {
 }
 /* ------------------------------------------- */
 .hero {
-  background-image: linear-gradient(var(--grey), var(--grey)),
-    url(../images/img10-mobile.jpg);
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/office-mobile.jpg);
   max-width: 320px;
   background-position: center;
   background-repeat: no-repeat;
@@ -752,7 +753,7 @@ section {
 @media (min-resolution: 192dpi) {
   .hero {
     background-image: linear-gradient var(--grey),
-      var(--grey) url(../images/heroimage-mobile@2x.jpg);
+      var(--grey) url(../images/office-mobile@2k.jpg);
   }
 }
 /* -----------------------------------------------------------------------T */
@@ -760,143 +761,144 @@ section {
   .container {
     max-width: 768px;
   }
-}
-.navigation-list-address {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
-  justify-content: flex-end;
-}
-.navigation-list-menu {
-  display: flex;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  padding: 24px 0;
-  gap: 40px;
-}
-.current {
-  position: relative;
-  color: var(--ocean);
-}
-.current::after {
-  content: '';
-  background-color: var(--ocean);
-  width: 100%;
-  height: 4px;
-  left: 0;
-  bottom: -1px;
-  border-radius: 2px;
-  position: absolute;
-  opacity: 1;
-  visibility: visible;
-  pointer-events: auto;
-}
-.logo {
-  margin-right: 120px;
-}
-.menu-hamburger,
-.menu-icon-hamburger {
-  display: none;
-}
-.hero {
-  background-image: linear-gradient var(--grey), var(--grey),
-    url(../images/office-tablet.jpg;);
-  max-width: 768px;
-  padding: 112px 0;
-}
-.header-title {
-  font-size: 56px;
-  max-width: 496px;
-}
-.column-container {
-  padding: 96px 0;
-}
-.column-list {
-  flex-direction: row;
-  flex-wrap: wrap;
-  column-gap: 24px;
-}
-.column-item {
-  width: calc((100% - 24px) / 2);
-  gap: 72px;
-}
-.column-title.mobile-titles {
-  font-size: 36px;
-  font-weight: 700;
-  text-align: left;
-}
-.team-list {
-  flex-wrap: wrap;
-  justify-content: center;
-  margin: 0 auto;
-  column-gap: 24px;
-  row-gap: 64px;
-}
-.portfolio-block {
-  padding: 96px 0;
-}
-.portfolio-list {
-  flex-wrap: wrap;
-  justify-content: center;
-  margin: 0 auto;
-  column-gap: 24px;
-  row-gap: 72px;
-}
-.portfolio-services {
-  width: calc((100% - 24px) / 2);
-}
-.container-footer {
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  column-gap: 24px;
-  row-gap: 72px;
-  align-items: baseline;
-  max-width: 530px;
-}
-.fotter-section-logo {
-  margin: 0;
-}
-.footer-text {
-  width: 264px;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-}
-.footer-subscribe {
-  margin-left: auto;
-}
-.footer-subscribe-form {
-  display: flex;
-  flex-direction: row;
-  gap: 24px;
-}
-.logo-second {
-  display: block;
-  margin-right: 0;
-  text-align: left;
-}
-.footer-subscribe {
-  margin: 0;
-}
-.footer-social-media-title {
-  text-align: left;
-}
-.input-footer {
-  opacity: 0.3;
-}
-.input-footer::placeholder {
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 2;
-  opacity: 0.6;
-}
-.modal {
-  width: 408px;
-  min-height: 584px;
+
+  .navigation-list-address {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: flex-end;
+  }
+  .navigation-list-menu {
+    display: flex;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    padding: 24px 0;
+    gap: 40px;
+  }
+  .current {
+    position: relative;
+    color: var(--ocean);
+  }
+  .current::after {
+    content: '';
+    background-color: var(--ocean);
+    width: 100%;
+    height: 4px;
+    left: 0;
+    bottom: -1px;
+    border-radius: 2px;
+    position: absolute;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+  .logo {
+    margin-right: 120px;
+  }
+  .menu-hamburger,
+  .menu-icon-hamburger {
+    display: none;
+  }
+  .hero {
+    background-image: linear-gradient var(--grey), var(--grey),
+      url(../images/office-tablet.jpg;);
+    max-width: 768px;
+    padding: 112px 0;
+  }
+  .header-title {
+    font-size: 56px;
+    max-width: 496px;
+  }
+  .column-container {
+    padding: 96px 0;
+  }
+  .column-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 24px;
+  }
+  .column-item {
+    width: calc((100% - 24px) / 2);
+    gap: 72px;
+  }
+  .column-title.mobile-titles {
+    font-size: 36px;
+    font-weight: 700;
+    text-align: left;
+  }
+  .team-list {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    column-gap: 24px;
+    row-gap: 64px;
+  }
+  .portfolio-block {
+    padding: 96px 0;
+  }
+  .portfolio-list {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    column-gap: 24px;
+    row-gap: 72px;
+  }
+  .portfolio-services {
+    width: calc((100% - 24px) / 2);
+  }
+  .container-footer {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    column-gap: 24px;
+    row-gap: 72px;
+    align-items: baseline;
+    max-width: 530px;
+  }
+  .fotter-section-logo {
+    margin: 0;
+  }
+  .footer-text {
+    width: 264px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+  }
+  .footer-subscribe {
+    margin-left: auto;
+  }
+  .footer-subscribe-form {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+  }
+  .logo-second {
+    display: block;
+    margin-right: 0;
+    text-align: left;
+  }
+  .footer-subscribe {
+    margin: 0;
+  }
+  .footer-social-media-title {
+    text-align: left;
+  }
+  .input-footer {
+    opacity: 0.3;
+  }
+  .input-footer::placeholder {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 2;
+    opacity: 0.6;
+  }
+  .modal {
+    width: 408px;
+    min-height: 584px;
+  }
 }
 @media (min-width: 768px) and (min-resolution: 192dpi) {
   .blue-box {
@@ -911,107 +913,107 @@ section {
     padding-left: 15px;
     padding-right: 15px;
   }
-}
-.logo {
-  margin-right: 76px;
-  padding: 0;
-}
-.navigation-list-menu,
-.navigation-list-address {
-  flex-direction: row;
-}
-.navigation-list-address {
-  gap: 40px;
-  padding: 24px 0;
-  margin-right: 0;
-  justify-content: flex-end;
-}
-.kontact-list {
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-}
-.hero {
-  background-image: linear-gradient var(--grey), var(--grey),
-    url(../images/office-desktop.jpg);
-  max-width: 1440px;
-  padding: 188px 0;
-}
-.column-container {
-  padding: 120px 0;
-}
-.column-item {
-  width: calc((100% - 72px) / 4);
-}
-.column-field {
-  display: block;
-  background: var(--cloud);
-  border: 1px solid var(--light-slate);
-  border-radius: 4px;
-  width: 264px;
-  height: 112px;
-  margin-bottom: 8px;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.column-field-icon {
-  position: absolute;
-  top: 24px;
-  left: 100px;
-}
-.column-text {
-  font-weight: inherit;
-}
-.team {
-  padding: 120px 0;
-}
-.column-title.mobile-titles {
-  font-size: 20px;
-  font-weight: 500;
-}
-.portfolio-list {
-  column-gap: 24px;
-  row-gap: 48px;
-}
-.portfolio-services {
-  width: calc((100% - 48px) / 3);
-}
-.container-footer {
-  flex-direction: row;
-  flex-wrap: nowrap;
-  align-items: baseline;
-}
-.footer {
-  height: 312px;
-  padding: 100px 0;
-}
-.fotter-section-logo {
-  margin-right: 120px;
-}
-.footer-subscribe {
-  margin-left: auto;
-}
-.logo-second {
-  display: inline-block;
-  margin-bottom: 16px;
-  text-align: left;
-}
-.input-footer::placeholder {
-  color: var(--white);
-  opacity: 1;
-}
-.footer-text {
-  width: 264px;
-}
-.input-footer {
-  opacity: 1;
-}
-.modal {
-  width: 408px;
-  min-height: 584px;
-  padding: 72px 24px 24px 24px;
+  .logo {
+    margin-right: 76px;
+    padding: 0;
+  }
+  .navigation-list-menu,
+  .navigation-list-address {
+    flex-direction: row;
+  }
+  .navigation-list-address {
+    gap: 40px;
+    padding: 24px 0;
+    margin-right: 0;
+    justify-content: flex-end;
+  }
+  .kontact-list {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+  }
+  .hero {
+    background-image: linear-gradient var(--grey), var(--grey),
+      url(../images/office-desktop.jpg);
+    max-width: 1440px;
+    padding: 188px 0;
+  }
+  .column-container {
+    padding: 120px 0;
+  }
+  .column-item {
+    width: calc((100% - 72px) / 4);
+  }
+  .column-field {
+    display: block;
+    background: var(--cloud);
+    border: 1px solid var(--light-slate);
+    border-radius: 4px;
+    width: 264px;
+    height: 112px;
+    margin-bottom: 8px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .column-field-icon {
+    position: absolute;
+    top: 24px;
+    left: 100px;
+  }
+  .column-text {
+    font-weight: inherit;
+  }
+  .team {
+    padding: 120px 0;
+  }
+  .column-title.mobile-titles {
+    font-size: 20px;
+    font-weight: 500;
+  }
+  .portfolio-list {
+    column-gap: 24px;
+    row-gap: 48px;
+  }
+  .portfolio-services {
+    width: calc((100% - 48px) / 3);
+  }
+  .container-footer {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: baseline;
+  }
+  .footer {
+    height: 312px;
+    padding: 100px 0;
+  }
+  .fotter-section-logo {
+    margin-right: 120px;
+  }
+  .footer-subscribe {
+    margin-left: auto;
+  }
+  .logo-second {
+    display: inline-block;
+    margin-bottom: 16px;
+    text-align: left;
+  }
+  .input-footer::placeholder {
+    color: var(--white);
+    opacity: 1;
+  }
+  .footer-text {
+    width: 264px;
+  }
+  .input-footer {
+    opacity: 1;
+  }
+  .modal {
+    width: 408px;
+    min-height: 584px;
+    padding: 72px 24px 24px 24px;
+  }
 }
 @media (min-width: 1158px) and (min-resolution: 192dpi) {
   .blue-box {
