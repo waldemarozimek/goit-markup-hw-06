@@ -696,6 +696,38 @@ section {
     font-weight: 500;
   }
 }
+/* -----------------------our team */
+.team-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  row-gap: 72px;
+}
+.team-card {
+  background-color: var(--white);
+  border-radius: 0 0 4px 4px;
+  text-align: center;
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+}
+.card-caption {
+  padding: 32px 0;
+}
+.team {
+  background-color: var(--cloud);
+  padding: 96px 0;
+}
+.text {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--slate);
+  text-align: center;
+}
+/* -----------------------our portfolio */
+.portfolio-block {
+  padding: 96px 0;
+}
 
 /* ================================================= TABLET 👇 ========================================= */
 @media screen and (min-width: 768px) {
@@ -723,6 +755,16 @@ section {
     text-align: left;
   }
 }
+/* -----------------------our team */
+  .team-list {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    column-gap: 24px;
+    row-gap: 64px;
+  }
+/* -----------------------our portfolio */
+
 /* ================================================= DESKTOP 👇 ========================================= */
 @media screen and (min-width: 1158px) {
   .container {
@@ -758,3 +800,5 @@ section {
     font-weight: inherit;
   }
 }
+/* -----------------------our team */
+/* -----------------------our portfolio */
