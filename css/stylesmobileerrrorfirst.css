@@ -383,10 +383,7 @@ section {
   position: relative;
   overflow: hidden;
 }
-.portfolio-services:hover .text-portfolio-picture,
-.portfolio-services:focus .text-portfolio-picture {
-  transform: translateY(0%);
-}
+
 /* -------------------------------------------------------------------- */
 .column-title {
   line-height: 1.2;

@@ -44,7 +44,6 @@ p {
   display: flex;
   align-items: baseline;
 }
-
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -695,39 +694,52 @@ section {
   .column-text {
     font-weight: 500;
   }
+
+  /* -----------------------our team */
+  .team-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 72px;
+  }
+  .team-card {
+    background-color: var(--white);
+    border-radius: 0 0 4px 4px;
+    text-align: center;
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+      0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+  }
+  .card-caption {
+    padding: 32px 0;
+  }
+  .team {
+    background-color: var(--cloud);
+    padding: 96px 0;
+  }
+  .text {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--slate);
+    text-align: center;
+  }
+  /* -----------------------our portfolio */
+  .portfolio-block {
+    padding: 96px 0;
+  }
+  .portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 48px;
+    margin: 0 auto;
+  }
+  .portfolio-services {
+    width: 100%;
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }
-/* -----------------------our team */
-.team-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  row-gap: 72px;
-}
-.team-card {
-  background-color: var(--white);
-  border-radius: 0 0 4px 4px;
-  text-align: center;
-  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
-    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
-}
-.card-caption {
-  padding: 32px 0;
-}
-.team {
-  background-color: var(--cloud);
-  padding: 96px 0;
-}
-.text {
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: var(--slate);
-  text-align: center;
-}
-/* -----------------------our portfolio */
-.portfolio-block {
-  padding: 96px 0;
-}
+/* -----------------------footer */
 
 /* ================================================= TABLET 👇 ========================================= */
 @media screen and (min-width: 768px) {
@@ -754,8 +766,8 @@ section {
     font-weight: 700;
     text-align: left;
   }
-}
-/* -----------------------our team */
+
+  /* -----------------------our team */
   .team-list {
     flex-wrap: wrap;
     justify-content: center;
@@ -763,8 +775,22 @@ section {
     column-gap: 24px;
     row-gap: 64px;
   }
-/* -----------------------our portfolio */
-
+  /* -----------------------our portfolio */
+  .portfolio-block {
+    padding: 96px 0;
+  }
+  .portfolio-list {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    column-gap: 24px;
+    row-gap: 72px;
+  }
+  .portfolio-services {
+    width: calc((100% - 24px) / 2);
+  }
+}
+/* -----------------------footer */
 /* ================================================= DESKTOP 👇 ========================================= */
 @media screen and (min-width: 1158px) {
   .container {
@@ -799,6 +825,18 @@ section {
   .column-text {
     font-weight: inherit;
   }
+
+  /* -----------------------our team */
+  /* -----------------------our portfolio */
+  .portfolio-services {
+    width: calc((100% - 48px) / 3);
+  }
+  .portfolio-list {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    column-gap: 24px;
+    row-gap: 72px;
+  }
 }
-/* -----------------------our team */
-/* -----------------------our portfolio */
+/* -----------------------footer */
