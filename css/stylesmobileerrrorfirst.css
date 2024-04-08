@@ -898,7 +898,7 @@ section {
   }
 }
 @media (min-width: 768px) and (min-resolution: 192dpi) {
-  .blue-box {
+  .hero {
     background-image: linear-gradient var(--grey), var(--grey),
       url(../images/office-tablet@2k.jpg);
   }

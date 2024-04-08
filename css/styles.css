@@ -694,7 +694,22 @@ section {
   .column-text {
     font-weight: 500;
   }
-
+  /* ------------------------------------------HERO */
+  .hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/office-mobile.jpg);
+    max-width: 320px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgb(46, 47, 66);
+    text-align: center;
+    padding: 72px 0;
+    margin: 0 auto;
+  }
   /* -----------------------our team */
   .team-list {
     display: flex;
@@ -801,7 +816,19 @@ section {
     font-weight: 700;
     text-align: left;
   }
-
+  /* ------------------------------------------HERO */
+  .hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      max-width: 768px;
+      padding: 112px 0;
+  }
+  .header-title {
+    font-size: 56px;
+    max-width: 496px;
+  }
   /* -----------------------our team */
   .team-list {
     flex-wrap: wrap;
@@ -932,5 +959,4 @@ section {
     row-gap: 72px;
   }
   /* -----------------------footer */
-
 }
