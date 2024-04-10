@@ -218,15 +218,15 @@ section {
 .column-item {
   width: calc((100% - 72px) / 4);
 }
-.column-titles {
-  font-family: 'Roboto', sans-serif;
+/* .column-title {
+  font-family: var(--font-family);
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--navy-blue);
   margin-bottom: 8px;
-}
+} */
 .column-text {
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -675,15 +675,16 @@ section {
     padding: 16px 0;
   }
   .header-title {
-  font-size: 36px;
-  line-height: 1.07;
-  letter-spacing: 0.02em;
-  font-weight: 700;
-  color: var(--white);
-  max-width: 200px;
-  margin: 0 auto;
-  margin-bottom: 48px;
-}
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    font-weight: 700;
+    color: var(--white);
+    max-width: 200px;
+    max-height: 640px;
+    margin: 0 auto;
+    margin-bottom: 48px;
+  }
   .navigation {
     display: flex;
     align-items: center;
@@ -711,10 +712,12 @@ section {
     flex-direction: column;
     row-gap: 72px;
   }
-  .column-titles.mobile-h2 {
+  .column-title.mobile-h2 {
     font-size: 36px;
     font-weight: 700;
     text-align: center;
+    line-height: 111%;
+    letter-spacing: 0.02em;
   }
 
   .column-item {
@@ -770,7 +773,7 @@ section {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--slate);
-    text-align: center;
+    
   }
   /* -----------------------our portfolio */
   .portfolio-block {
@@ -959,10 +962,11 @@ section {
     flex-wrap: wrap;
     column-gap: 24px;
   }
-  .column-titles.mobile-h2 {
-    font-size: 36px;
+  .column-title.tablet-h3 {
     font-weight: 700;
-    text-align: center;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
   }
   .column-field {
     display: none;
@@ -971,11 +975,7 @@ section {
     width: calc((100% - 24px) / 2);
     gap: 72px;
   }
-  .column-title.mobile-titles {
-    font-size: 36px;
-    font-weight: 700;
-    text-align: left;
-  }
+
   /* ------------------------------------------HERO */
   .hero {
     background-image: linear-gradient(
@@ -1090,10 +1090,6 @@ section {
   }
   .column-container {
     padding: 120px 0;
-  }
-  .column-titles.desktop-h3 {
-    font-size: 20px;
-    font-weight: 500;
   }
 
   .column-item {
