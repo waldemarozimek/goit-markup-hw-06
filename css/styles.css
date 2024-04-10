@@ -110,7 +110,7 @@ img {
 }
 .navigation-list-address {
   display: flex;
-  padding: 24px 0;
+  /* padding: 24px 0; */
   gap: 40px;
 }
 .navigation-link {
@@ -668,14 +668,14 @@ section {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-
-
 @media (min-width: 1158px) and (min-resolution: 192dpi) {
-    .hero {
-        background-image: linear-gradient(rgba(46, 47, 66, 0.7),
-                rgba(46, 47, 66, 0.7)),
-            url(../images/office-desktop@2x.jpg);
-    }
+  .hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/office-desktop@2x.jpg);
+  }
 }
 
 /* ========================================== MOBILE 👇 ========================================= */
@@ -785,7 +785,6 @@ section {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--slate);
-    
   }
   /* -----------------------our portfolio */
   .portfolio-block {
@@ -921,11 +920,13 @@ section {
   }
 }
 @media (min-resolution: 192dpi) {
-    .hero {
-        background-image: linear-gradient(rgba(46, 47, 66, 0.7),
-                rgba(46, 47, 66, 0.7)),
-            url(../images/office-mobile@2x.jpg);
-    }
+  .hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/office-mobile@2x.jpg);
+  }
 }
 /* ================================================= TABLET 👇 ========================================= */
 @media screen and (min-width: 768px) {
@@ -1043,7 +1044,7 @@ section {
     flex-wrap: wrap;
     justify-content: flex-start;
     column-gap: 24px;
-    row-gap: 72px; 
+    row-gap: 72px;
     align-items: baseline;
     max-width: 530px;
   }
@@ -1091,11 +1092,13 @@ section {
   }
 }
 @media (min-width: 768px) and (min-resolution: 192dpi) {
-    .hero {
-        background-image: linear-gradient(rgba(46, 47, 66, 0.7),
-                rgba(46, 47, 66, 0.7)),
-            url(../images/office-desktop@2x.jpg);
-    }
+  .hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/office-desktop@2x.jpg);
+  }
 }
 
 /* ================================================= DESKTOP 👇 ========================================= */
