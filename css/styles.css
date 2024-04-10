@@ -441,6 +441,7 @@ section {
   border-radius: 4px;
   padding: 8px 24px;
   min-width: 165px;
+  margin: 0 auto;
   height: 40px;
   background: var(--iris);
   font-family: var(--font-family);
@@ -666,7 +667,18 @@ section {
 .icon-close {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-/* ================================================= MOBILE 👇 ========================================= */
+
+
+
+@media (min-width: 1158px) and (min-resolution: 192dpi) {
+    .hero {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)),
+            url(../images/office-desktop@2x.jpg);
+    }
+}
+
+/* ========================================== MOBILE 👇 ========================================= */
 @media screen and (max-width: 767px) {
   .header-container {
     display: flex;
@@ -794,7 +806,7 @@ section {
   .footer {
     height: 100%;
     width: 100%;
-    padding: 96px 16px;
+    padding: 96px 0;
   }
   .container-footer {
     flex-direction: column;
@@ -907,6 +919,13 @@ section {
     visibility: hidden;
     pointer-events: none;
   }
+}
+@media (min-resolution: 192dpi) {
+    .hero {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)),
+            url(../images/office-mobile@2x.jpg);
+    }
 }
 /* ================================================= TABLET 👇 ========================================= */
 @media screen and (min-width: 768px) {
@@ -1024,7 +1043,7 @@ section {
     flex-wrap: wrap;
     justify-content: flex-start;
     column-gap: 24px;
-    row-gap: 72px;
+    row-gap: 72px; 
     align-items: baseline;
     max-width: 530px;
   }
@@ -1070,6 +1089,13 @@ section {
     width: 408px;
     min-height: 584px;
   }
+}
+@media (min-width: 768px) and (min-resolution: 192dpi) {
+    .hero {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)),
+            url(../images/office-desktop@2x.jpg);
+    }
 }
 
 /* ================================================= DESKTOP 👇 ========================================= */
