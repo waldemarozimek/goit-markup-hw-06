@@ -673,6 +673,16 @@ section {
     align-items: center;
     justify-content: space-between;
   }
+  .header-title {
+  font-size: 36px;
+  line-height: 1.07;
+  letter-spacing: 0.02em;
+  font-weight: 700;
+  color: var(--white);
+  max-width: 200px;
+  margin: 0 auto;
+  margin-bottom: 48px;
+}
   .navigation {
     display: flex;
     align-items: center;
@@ -837,7 +847,7 @@ section {
     transform: translateX(100%);
   }
 
-  .social-media-hambrurger {
+  .social-media-hamburger {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
