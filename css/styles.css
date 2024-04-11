@@ -218,7 +218,7 @@ section {
 .column-item {
   width: calc((100% - 72px) / 4);
 }
-/* .column-title {
+.column-title {
   font-family: var(--font-family);
   font-weight: 500;
   font-size: 20px;
@@ -226,7 +226,7 @@ section {
   letter-spacing: 0.02em;
   color: var(--navy-blue);
   margin-bottom: 8px;
-} */
+}
 .column-text {
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -728,8 +728,9 @@ section {
     font-size: 36px;
     font-weight: 700;
     text-align: center;
-    line-height: 111%;
+    line-height: 1.11;
     letter-spacing: 0.02em;
+    padding-bottom: 8px;
   }
 
   .column-item {
